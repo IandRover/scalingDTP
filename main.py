@@ -26,7 +26,7 @@ from target_prop.models import (
     DTP,
     BaselineModel,
     Model,
-    ParallelDTP,
+    # ParallelDTP,
     TargetProp,
     VanillaDTP,
 )
@@ -89,7 +89,7 @@ cs.store(name="base_options", node=Options)
 
 cs.store(group="model", name="model", node=Model.HParams())
 cs.store(group="model", name="dtp", node=DTP.HParams())
-cs.store(group="model", name="parallel_dtp", node=ParallelDTP.HParams())
+# cs.store(group="model", name="parallel_dtp", node=ParallelDTP.HParams())
 cs.store(group="model", name="vanilla_dtp", node=VanillaDTP.HParams())
 cs.store(group="model", name="target_prop", node=TargetProp.HParams())
 cs.store(group="model", name="backprop", node=BaselineModel.HParams())
